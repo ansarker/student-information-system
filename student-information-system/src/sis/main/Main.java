@@ -91,7 +91,7 @@ public class Main {
 				if (login_id.getText().equals("admin") && login_pass.getText().equals("12345")) {
 					JOptionPane.showMessageDialog(null, "Login Successfull.", "Message", JOptionPane.INFORMATION_MESSAGE);
 					frame.dispose();
-					Main info = new Main();
+					Information info = new Information();
 					info.show();
 				} else {
 					JOptionPane.showMessageDialog(null, "Login Failed.\nUser ID or Password don't match", "Message", JOptionPane.INFORMATION_MESSAGE);
@@ -110,7 +110,7 @@ public class Main {
 		lblPreparedBy.setBounds(32, 47, 330, 50);
 		main_panel.add(lblPreparedBy);
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("/root/workspace/Student-Info-System/src/Student_Info_System/icons/monitor.png"));
+		label.setIcon(new ImageIcon("src/sis/icons/monitor.png"));
 		label.setBounds(90, 150, 128, 128);
 		main_panel.add(label);
 		frame.getContentPane().setLayout(groupLayout);
